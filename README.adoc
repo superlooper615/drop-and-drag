@@ -1,0 +1,24 @@
+= CIS 3368 Drag and Drop Example
+
+This code provides an example of using drag and drop with JavaFX.
+
+== Overview
+This application demonstrates simple drag/drop between lists. It includes
+status changes in the items dropped using an `enum` data type. This status change
+illustrates _one_ way that you might change the state of a dragged item. When using
+a database, you could
+
+* use a separate table with the status values and included a foreign key
+to the status
+
+or
+
+* save the enumerated type to the database either as an integer or a string
+
+When using Spring, one approach when saving the `enum` to the database is to
+use the `@Enumerated(value = EnumType.STRING)` annotation. This saves the string
+value (in this example, that would be 'Customer' or 'Prospect') to the db
+instead of just an integer.
+
+There are pros and cons to each method. Do a search on `java store enums in database`
+to get a sense of the different approaches to this problem.

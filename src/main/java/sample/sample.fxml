@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ListView fx:id="sourceList" layoutX="65.0" layoutY="100.0" onDragDetected="#dragProspectDetected" onDragDone="#dragDoneOnProspect" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="targetList" layoutX="340.0" layoutY="100.0" onDragDropped="#dragDroppedOnCustomer" onDragOver="#dragOverCustomer" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="131.0" layoutY="68.0" text="Prospect" />
+      <Label layoutX="407.0" layoutY="68.0" text="Customer" />
+   </children>
+</AnchorPane>
