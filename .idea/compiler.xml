@@ -20,7 +20,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="list-drag-example" target="1.8" />
+      <module name="list-drag-example" target="11" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="list-drag-example" options="-parameters" />
+    </option>
   </component>
 </project>
